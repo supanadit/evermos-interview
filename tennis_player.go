@@ -24,7 +24,7 @@ Can you write the API based on those problem?
 
 // I create struct for player
 type tennisPlayer struct {
-	// Name of player
+	// CustomerName of player
 	Name string `json:"name"`
 	// Based on point (a) Rahman has many ball containers, which is rahman has many ball containers meaning the player can have more ball container
 	BallContainer []ballContainer `json:"ball_container"`
@@ -85,7 +85,7 @@ func main() {
 		Name: "Rahman",
 	}
 
-	fmt.Printf("Name of Tennis Player : %s \n", rahman.Name)
+	fmt.Printf("CustomerName of Tennis Player : %s \n", rahman.Name)
 
 	// Rahman wants ball container to be full of balls before he’s going out to play, so it tells rahman should fill the ball container
 	// Maximum total ball in a Ball Container based on real life is 3
@@ -124,7 +124,6 @@ func main() {
 	}
 
 	// Second question is "Can you write the API based on those problem?"
-
 	r := gin.Default()
 	r.GET("/player/information", func(c *gin.Context) {
 		c.JSON(200, rahman)
