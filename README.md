@@ -6,7 +6,7 @@ This is my interview test at Evermos which used Go programming language.
 - Go 1.14+
 
 ## How to set up
-- Clone repository with `git clone github.com/supanadit/evermos-interview'
+- Clone repository with `git clone github.com/supanadit/evermos-interview`
 - Install the required dependency with `go get`
 
 ### Quick start for "Tennis Player"
